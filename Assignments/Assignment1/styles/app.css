@@ -1,0 +1,14 @@
+* { box-sizing: border-box; }
+body { background-color: #e9e9f9; }
+.container {
+  width: 40%;
+  min-width: 400px;
+  margin: 1em auto;
+  background-color: #fafafa;
+  box-shadow: 0px 1px 3px #444;
+}
+.message { font-size: 1.3em; font-weight: bold; }
+  .message.valid {color: #04fa04;}
+  .message.invalid {color: #fa0404;}
+input.valid { border-color: #04fa04; }
+input.invalid { border-color: #fa0404; }
