@@ -11,8 +11,8 @@
 
   LunchCheckerController.$inject = ['$scope'];  // define the names of expected parameters to avoid problems when minified
   function LunchCheckerController($scope) {     // $scope makes data available to the view
-    $scope.LunchInput = "";
-    $scope.InputValidState = 0;   // 0 = no input, 1 = invalid, 2 = valid
+    $scope.LunchInput = "";       // model for input value
+    $scope.InputValidState = 0;   // 0 = no input, 1 = invalid, 2 = valid, for input and message class
     $scope.LunchCheckerResultMessage = "";
     $scope.CheckLunch = function () {
       var input = $scope.LunchInput;

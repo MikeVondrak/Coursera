@@ -1,4 +1,6 @@
 * { box-sizing: border-box; }
+.centerInline { text-align: center; }
+.centerInline > div { display: inline-block; }
 body { background-color: #e9e9f9; }
 .container {
   width: 40%;

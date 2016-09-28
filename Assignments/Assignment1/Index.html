@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en" ng-app="LunchChecker">
 <head>
   <meta charset="utf-8">
@@ -18,12 +19,17 @@
             class="form-control ng-class:{'invalid' : InputValidState == 1,'valid' : InputValidState == 2}"
             placeholder="Enter a comma-separated list of items...">
     </div>
-    <div class="form-group">
-      <button ng-click="CheckLunch()" class="btn btn-default">Check If Too Much</button>
+    <div class="centerInline">
+      <div>
+        <div class="form-group message ng-class:{'invalid' : InputValidState == 1, 'valid' : InputValidState == 2}">
+          {{LunchCheckerResultMessage}}
+        </div>
+        <div class="form-group">
+          <button ng-click="CheckLunch()" class="btn btn-default">Check If Too Much</button>
+        </div>
+      </div>
     </div>
-    <div class="form-group message ng-class:{'invalid' : InputValidState == 1, 'valid' : InputValidState == 2}">
-      {{LunchCheckerResultMessage}}
-    </div>
+
   </div><!-- end container -->
 </body>
 </html>
